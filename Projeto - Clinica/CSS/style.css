@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*CSS DO TOPO DA PÁGINA*/
+
+.secao-limitada{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+header{
+    width: 100%;
+    display: flex;
+    background-color: #00cad1;
+    position: fixed;
+   
+}
+
+.topo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.links-topo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    padding: 10px;
+}
+.links-topo a{
+  
+    text-decoration: none;
+    margin: 0 0 10px 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.links-topo a:hover{
+    color: red;
+}
+
+/**/
+
+
+/*CSS DO CONTEÚDO PRINCIPAL*/
+
+section.conteudo-principal{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagens/recepcao.png');
+    background-size: cover;
+
+}
+
+.container-conteudo{
+    position: relative;
+}
+
+.container-conteudo h2{
+    
+   
+    color: #fff;
+    width: 420px;
+    font-size:48px;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    text-shadow: 2px 5px 3px darkred;
+}
+
+/*sobre*/
+
+section.sobre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.container-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    color: pink;
+    font-weight: 600;
+}
+.container-sobre h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    color: pink;
+}
+.container-sobre p{
+    text-align: center;
+    color: pink;
+}
+
+.sobre-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.lista-de-servicos{
+    color: pink;
+    margin-left: 50px;
+}
+.lista-de-servicos h3{
+    margin-bottom: 10px;
+    color: pink;
+}
+
+.container-especialidades{
+    text-align: center;
+    margin-top: 25px;
+    color: pink;
+    font-weight: 600;
+}
+
+.container-especialidades p{
+   text-align: center;
+}
+
+.box-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.card{
+    width: 240px;
+    height: 250px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    padding-bottom: 140px;
+    box-shadow: 5px 3px 7px pink;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5px;
+    margin-right:20px ;
+    gap: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 115%;
+}
+
+
+button{
+    width:130px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    background-color: pink;
+    padding: 10px;
+    border: 1px solid;
+    margin: 10px auto; 
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgrey;
+    box-shadow: 5px 3px 7px pink;
+}
+
+figcaption{
+    font-weight: 600;
+}
+
+section.contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    color: pink;
+    font-weight: 500;
+}
+
+.contato-informacoes h3,
+.contato-informacoes p{
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+
+footer{
+    width: 100%;
+    padding: 40px;
+    margin-top: 25px;  
+    background-color: gray;
+    font-weight: 600;
+}
+
+.rodape-info{
+    color: #fff;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+span{
+    font-weight: 900;
+
+}
+
+@media(max-width:768px){
+    .iframe{
+        display: flex;
+        flex: 2 0;
+    }
+
+    .topo{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+
+    }
+
+    .container-conteudo h2{
+
+        font-size: 28px;
+        text-align: center;
+        text-shadow: 2px 5px 3px darkred;
+    }
+
+    .topo a{
+        font-size: 18px;
+    }
+
+    .topo img{
+        width: 100px;
+    }
+
+    .rodape-info{
+        text-align: center;
+    }
+
+    .rodape-info img{
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .contato p,
+    .contato h3{
+        font-size: 14px;
+    }
+
+
+}

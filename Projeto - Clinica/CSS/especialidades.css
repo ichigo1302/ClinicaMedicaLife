@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*CSS DO TOPO DA PÁGINA*/
+
+.secao-limitada{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+header{
+    width: 100%;
+    display: flex;
+    background-color: #00cad1;
+    
+   
+}.topo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.links-topo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    padding: 10px;
+}
+.links-topo a{
+  
+    text-decoration: none;
+    margin: 0 0 10px 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.links-topo a:hover{
+    color: red;
+}
+
+section.box-links-especialidades{
+   text-align: center;
+}
+
+.box-links-especialidades > h1{
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.caixa-de-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.caixa-de-links a{
+    color: pink;
+    font-weight: 700;
+}
+
+
+
+.caixa-de-links a:hover{
+    color: darkred;
+}
+
+.caixa-de-links a:visited{
+    color: burlywood;
+}
+
+/*CSS DAS ESPECIALIDADES*/
+
+
+
+.especialidade{
+  text-align: center;
+}
+
+.especialidade h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: pink;
+    font-weight: 800;
+}
+
+.especialidade p{
+    text-align: center;
+    color: pink;
+}
+
+.container-especialidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.container-especialidade img{
+    width:220px;
+    height: 234px;
+}
+
+
+footer{
+    width: 100%;
+    padding: 40px;
+    margin-top: 25px;  
+    background-color: gray;
+    font-weight: 600;
+}
+
+.rodape-info{
+    color: #fff;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/*ccs da tabela*/
+
+table{
+
+    width: 100%;
+    height: 254px;
+    display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+ }
+
+
+table td{
+    width: 25%;
+}
+
+table tr{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 19px;
+    border-bottom: 1px solid palevioletred;
+ }
+
+
+table tr:nth-of-type(odd){
+   
+    background-color: pink;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-of-type(even){
+    
+    background-color:whitesmoke ;
+    color: gray;
+    font-weight: 600;
+}
+
+
+
+
+
+/*css media queries*/
+
+@media(max-width:768px){
+    
+    .topo{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+
+    }
+
+    .especialidade{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+   .container-especialidade{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+   }
+
+   .container-especialidade img{
+    width: 80%;
+    box-shadow: 5px 3px 7px pink;
+   }
+
+    .topo a{
+        font-size: 18px;
+    }
+
+    .topo img{
+        width: 100px;
+    }
+
+    .rodape-info{
+        text-align: center;
+    }
+
+    .rodape-info img{
+        width: 100px;
+        font-size: 14px;
+    }
+}
