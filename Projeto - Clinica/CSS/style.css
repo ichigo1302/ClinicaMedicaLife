@@ -221,7 +221,7 @@ span{
 
 }
 
-@media(max-width:768px){
+@media(max-width:815px){
     .iframe{
         display: flex;
         flex: 2 0;
